@@ -1,0 +1,105 @@
+.offerings {
+    padding-top: 260px;
+    padding-bottom: 100px;
+
+    background-image: url(/images/Rectangle\ 694.png);
+    background-repeat: no-repeat;
+        background-size: 100% 100%;
+    background-position: center;
+}
+
+.offerings__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.img-wrap {
+    position: relative;
+    
+    width: 502px;
+    height: 502px;
+    background-color: #FEFEFE;
+    
+    border-radius: 50%;
+}
+
+.apple {
+    position: absolute;
+    bottom: 78px;
+    left: 60px;
+    width: 396px;
+}
+
+.offerings__title {
+    max-width: 500px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+
+    color: #2C2C2C;
+}
+
+.offerings__text {
+    max-width: 500px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
+
+.benefits {
+    display: flex;
+    margin-bottom: 32px;
+    @extend %list;
+}
+
+.benefits__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background-color: #F5F5F5;
+}
+
+.benefits__title {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #2C2C2C;
+}
+
+.benefits__text {
+    max-width: 253px;
+    
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
+
+.offerings__button {
+    min-width: 106px;
+    // min-height: 40px;
+
+    background-color: #FFFFFF;
+    border: 2px solid #7EB101;
+}

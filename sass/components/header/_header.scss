@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+
+    @extend %list;
+}
+
+.header__menu {
+    margin-right: 30px;
+}
+
+.menu__link {
+    padding: 28px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: #2C2C2C;
+}

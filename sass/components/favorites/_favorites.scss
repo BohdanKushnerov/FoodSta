@@ -1,0 +1,42 @@
+.favorites {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.favorites__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.favorites__text {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.favorites__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @extend %list;
+}
+
+.favorites__item {
+    width: calc((100% - 64px) / 3);
+}
+
+.favorites__img {
+    padding: 41px 40px;
+    border: 16px solid #FFE550;
+    border-radius: 50%;
+}

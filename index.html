@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSta</title>
+
+    <!-- Без Roboto semibold 600 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo" href="">
+                <img class="logo__img" src="./images/Vector.png" alt="Logo">
+            </a>
+
+            <nav class="nav">
+                <ul class="menu header__menu">
+                    <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Service</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Menu</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="button" type="button" data-modal-open>Order Now</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <button class="button" type="button">Order Now</button>
+
+                <div class="salat">
+                    <div class="salat__wrap">
+                        <img class="salat__img" src="./images/Foto 1.png" alt="">
+
+                        <button class="salat__button salat__button--left" type="button">
+                            <svg class="salat__svg" width="16" height="29">
+                                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="salat__button salat__button--right" type="button">
+                            <svg class="salat__svg salat__svg--rotate" width="16" height="29">
+                                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="offerings">
+            <div class="container offerings__container">
+
+                <div class="border-wrap">
+                    <div class="img-wrap">
+                        <img class="apple" src="./images/aple.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="offerings__content">
+                <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+                <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                
+                <ul class="benefits">
+                    <li class="benefits__item">
+                        <div class="benefits__wrap">
+                            <svg class="benefits__svg" width="32" height="32">
+                                <use href="./images/symbol-defs.svg#icon-rocket"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Fasest Delivery</h3>
+                        <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__wrap">
+                            <svg class="benefits__svg" width="32" height="32">
+                                <use href="./images/symbol-defs.svg#icon-touch"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Easy To Order</h3>
+                        <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    </li>
+                </ul>
+                
+                <button class="button offerings__button" type="button">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="favorites">
+            <div class="container favorites__container">
+                <h2 class="favorites__title">Some of Our Favorites</h2>
+                <p class="favorites__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="favorites__list">
+                    <li class="favorites__item">
+                        <picture>
+                            <source srcset="./images/favorites/gamburger-min.png 1x,
+                            ./images/favorites/gamburger@2x-min.png 2x">
+                            <img class="favorites__img" src="./images/favorites/gamburger-min.png" alt="">
+                        </picture>
+                    </li>
+                    <li class="favorites__item">
+                        <picture>
+                            <source srcset="./images/favorites/Pasta-min.png 1x,
+                            ./images/favorites/Pasta@2x-min.png 2x">
+                            <img class="favorites__img" src="./images/favorites/Pasta-min.png" alt="">
+                        </picture>
+                    </li>
+                    <li class="favorites__item">
+                        <picture>
+                            <source srcset="./images/favorites/pizza-min.png 1x,
+                            ./images/favorites/pizza@2x-min.png 2x">
+                            <img class="favorites__img" src="./images/favorites/pizza-min.png" alt="">
+                        </picture>
+                    </li>
+                    <li class="favorites__item">
+                        <picture>
+                            <source srcset="./images/favorites/chicken-min.png 1x,
+                            ./images/favorites/chicken@2x-min.png 2x">
+                            <img class="favorites__img" src="./images/favorites/chicken-min.png" alt="">
+                        </picture>
+                    </li>
+                    <li class="favorites__item">
+                        <picture>
+                            <source srcset="./images/favorites/salat-min.png 1x,
+                            ./images/favorites/salat@2x-min.png 2x">
+                            <img class="favorites__img" src="./images/favorites/salat-min.png" alt="">
+                        </picture>
+                    </li>
+                    <li class="favorites__item">
+                        <picture>
+                            <source srcset="./images/favorites/borshch-min.png 1x,
+                            ./images/favorites/borshch@2x-min.png 2x">
+                            <img class="favorites__img" src="./images/favorites/borshch-min.png" alt="">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="customers">
+            <div class="container customers__container">
+                <h2 class="customers__title">What our Customers Say</h2>
+                <p class="customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="review">
+                    <li class="review__item">
+                        <p class="review__coment">“The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked”</p>
+
+                        <h3 class="review__name">Sumith Shah</h3>
+                        <p class="review__position">Some Dude</p>
+                    </li>
+                    <li class="review__item">
+                        <p class="review__coment">“The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”</p>
+
+                        <h3 class="review__name">Sumith Shah</h3>
+                        <p class="review__position">Some Dude</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container subscribe__container">
+                <div>
+                <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+                <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+
+                <form class="subscribe__form">
+                    <input class="subscribe__input" type="email" placeholder="Enter your email">
+                
+                    <button class="button subscribe__button" type="button">Subscribe</button>
+                </form>
+                </div>
+
+                <img src="./images/subscribe/banan-min.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <div class="container footer__container">
+                <div class="menu-sub-wrap">
+                    <div class="footer-menu-wrap">
+                            <a class="logo logo__footer" href="">
+                                <img class="logo__img" src="./images/Vector.png" alt="Logo">
+                            </a>
+
+                        <nav class="nav footer__nav">
+                        <ul class="menu">
+                            <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+                            <li class="menu__item"><a class="menu__link" href="">About</a></li>
+                            <li class="menu__item"><a class="menu__link" href="">Service</a></li>
+                            <li class="menu__item"><a class="menu__link" href="">Menu</a></li>
+                            <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+                        </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-sub-wrap">
+                        <h3 class="footer-sub__title">Subscribe</h3>
+                        <form class="form footer__form">
+                        <input class="footer__input" type="email" placeholder="Enter your email">
+                        <button class="button subscribe__button footer__button" type="button">Subscribe</button>
+                        </form>
+                        <p class="footer-sub__text">By subscribing you agree to with our <span><a class="footer-sub__link" href="">Privacy Policy</a></span></p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-wrap">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="">Privacy Policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="">Terms of Service</a></li>
+                        <li class="footer__item"><a class="footer__link" href="">Cookies Settings</a></li>
+                    </ul>
+
+                    <p class="footer__bottom-text">2022 FoodSta. All right reserved.</p>
+                </div>
+            </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <form class="modal">
+            <button class="button-close" type="button" data-modal-close>
+                <svg width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title">Order Form</h2>
+
+            <label class="modal__label">
+                <span class="modal__text">Name</span> 
+            <input class="modal__input" type="text" name="username" placeholder="Your name" minlength="3" maxlength="25" required>
+            </label>
+            
+            <label class="modal__label">
+                <span class="modal__text">Phone number</span>
+            <input class="modal__input" type="tel" name="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
+            </label>
+
+            <label class="modal__label">
+                <span class="modal__text">E-mail</span>
+            <input class="modal__input" type="email" name="email" placeholder="example@gmail.com" required>
+            </label>
+
+            <button class="button modal__button" type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="./js/modal.js"></script>
+</body>
+</html>

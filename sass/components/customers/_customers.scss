@@ -1,0 +1,76 @@
+.customers {
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+    // Може треба так?
+    max-width: 1280px;
+    margin: 0 auto;
+
+    background-image: url(/images/Rectangle\ 706-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.customers__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    color: #2C2C2C;
+}
+
+.customers__text {
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #2C2C2C;
+}
+
+.review {
+    display: flex;
+    gap: 139px;
+
+    @extend %list;
+}
+
+.review__item {
+    padding: 14px;
+    // Временно
+    width: 501px;
+
+    background-image: url(../images/Rectangle\ 703-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.review__coment {
+    // Временно 58
+    margin-top: 58px;
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #2C2C2C;
+
+}
+
+.review__name {
+    margin-bottom: 2px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
+
+.review__position {
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+}

@@ -1,0 +1,49 @@
+.subscribe {
+    // padding-top: 58px;
+    padding-bottom: 100px;
+
+    // Може так?
+    // transform: translateY(-123px);
+}
+
+.subscribe__container {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    color: #2C2C2C;
+}
+
+.subscribe__text {
+    margin-bottom: 24px;
+    max-width: 656px;
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
+
+.subscribe__input {
+    margin-right: 32px;
+    padding: 12px 12px;
+    min-width: 394px;
+
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+}
+
+.subscribe__input::placeholder {
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+}
+
+.subscribe__button {
+    padding: 11px 22px;
+}
