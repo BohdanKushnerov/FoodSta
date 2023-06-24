@@ -1,76 +1,130 @@
 .customers {
-    padding-top: 100px;
-    padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(/images/Rectangle\ 706-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 
-    // Може треба так?
-    max-width: 1280px;
-    margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+    background-image: url(/images/Rectangle\ 701-mobile.png);
+  }
 
-    background-image: url(/images/Rectangle\ 706-min.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 60px 0 120px;
+    background-image: url(/images/Rectangle\ 706-tablet.png);
+  }
+}
+
+.customers__container {
+  max-width: 1280px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 768px;
+  }
 }
 
 .customers__title {
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    color: #2C2C2C;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  color: #2c2c2c;
 }
 
 .customers__text {
-    margin-bottom: 32px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    color: #2C2C2C;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #2c2c2c;
 }
 
 .review {
-    display: flex;
-    gap: 139px;
+  display: flex;
+  gap: 139px;
 
-    @extend %list;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    gap: 32px;
+  }
+  @extend %list;
 }
 
 .review__item {
-    padding: 14px;
-    // Временно
-    width: 501px;
+  position: relative;
+  padding: 8px;
+  border-radius: 0 30px 30px 30px;
 
-    background-image: url(../images/Rectangle\ 703-min.png);
+  @media screen and (max-width: 767px) {
+    max-width: 440px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 501px;
+  }
+
+  background-image: url(../images/Rectangle\ 703-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    content: "";
+    width: 101px;
+    height: 16px;
+    background-image: url(../../../images/Stars.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
 }
 
 .review__coment {
-    // Временно 58
-    margin-top: 58px;
-    margin-bottom: 40px;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #2c2c2c;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    color: #2C2C2C;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
 
+.review__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .review__name {
-    margin-bottom: 2px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #2C2C2C;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
 }
 
 .review__position {
-    font-size: 14px;
-    line-height: 150%;
-    color: #2C2C2C;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
 }
