@@ -1,69 +1,120 @@
 .hero__container {
+  max-width: 760px;
+  // max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
     position: relative;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 44px;
+    max-width: 704px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 159px;
+    gap: 40px;
+    max-width: 1280px;
+  }
 }
 
 .hero__title {
-    max-width: 502px;
-    margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #2c2c2c;
 
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    color: #2C2C2C;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 570px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 502px;
+  }
 }
 
 .hero__text {
-    max-width: 502px;
-    margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2c2c2c;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #2C2C2C;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 502px;
+  }
 }
 
 .salat {
-    position: absolute;
-    top: 14px;
-    right: 16px;
+  position: absolute;
+  top: 14px;
+  right: 16px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 320px;
+    top: 150px;
+    // right: 40px;
+    right: 32px;
+  }
 }
 
 .salat__wrap {
-    position: relative;
+  position: relative;
 }
 
 .salat__img {
-    border-radius: 50%;
-    border: 26px solid #FFE550;
+  border-radius: 50%;
+  border: 26px solid #ffe550;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    border: 14px solid #ffe550;
+  }
 }
 
 .salat__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 40px;
-    background: #FEFEFE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-radius: 8px;
-    border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 40px;
+  background: #fefefe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  border: transparent;
 }
 
 .salat__button--left {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-25%, -50%)
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-25%, -50%);
 }
 
 .salat__button--right {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(25%, -50%)
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(25%, -50%);
 }
 
 .salat__svg--rotate {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }

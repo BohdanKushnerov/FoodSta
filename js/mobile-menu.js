@@ -3,6 +3,7 @@
     openMenuBtn: document.querySelector("[data-menu-open]"),
     closeMenuBtn: document.querySelector("[data-menu-close]"),
     menu: document.querySelector("[data-menu]"),
+    button: document.querySelector("[data-button]"),
     body: document.querySelector("body"),
   };
 
@@ -11,11 +12,9 @@
 
   function toggleMenu() {
     refs.menu.classList.toggle("hidden");
+    refs.button.classList.toggle("hidden");
+    refs.menu.classList.toggle("is-open");
     refs.body.classList.toggle("no-scroll");
-  }
-  function removeMenu() {
-    refs.menu.classList.add('hidden');
-    refs.body.classList.remove('no-scroll');
   }
 })();
 

@@ -1,15 +1,21 @@
 .button {
-    min-width: 98px;
-    padding: 6px 18px;
+  width: 98px;
+  height: 32px;
+  // padding: 6px 18px;
+  // по фигме 18
+  padding: 6px 16px;
 
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 150%;
-    text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
 
-    color: #2C2C2C;
+  color: #2c2c2c;
 
-    background-color: #BBF330;
-    border: transparent;
-    border-radius: 30px;
+  background-color: #bbf330;
+  border: transparent;
+  border-radius: 30px;
+  &:hover {
+    cursor: pointer;
+  }
 }
