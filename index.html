@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
 
-    <!-- Без Roboto semibold 600 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +18,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -72,24 +75,63 @@
             Order Now
           </button>
 
-          <div class="salat">
-            <div class="salat__wrap">
-              <img class="salat__img" src="./images/Foto 1.png" alt="" />
+          <div class="swiper">
+            <ul class="swiper-list swiper-wrapper">
+              <li class="swiper-slide">
+                <img
+                  class="salat-img"
+                  src="./images/slider/salat-1.png"
+                  alt=""
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  class="salat-img"
+                  src="./images/slider/salat-2.png"
+                  alt=""
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  class="salat-img"
+                  src="./images/slider/salat-2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- <div class="swiper-slide">
+                <img
+                  class="salat-img"
+                  src="./images/slider/salat-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="salat-img"
+                  src="./images/slider/salat-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="salat-img"
+                  src="./images/slider/salat-3.png"
+                  alt=""
+                />
+              </div> -->
+            <!-- </div> -->
 
-              <button class="salat__button salat__button--left" type="button">
-                <svg class="salat__svg" width="16" height="29">
-                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-              </button>
-              <button class="salat__button salat__button--right" type="button">
-                <svg
-                  class="salat__svg salat__svg--rotate"
-                  width="16"
-                  height="29"
-                >
-                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-              </button>
+            <div class="salat__button swiper-button-prev">
+              <svg class="salat__svg" width="16" height="29">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="salat__button swiper-button-next">
+              <svg class="salat__svg salat__svg--rotate" width="16" height="29">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -99,7 +141,11 @@
         <div class="container offerings__container">
           <div class="border-wrap">
             <div class="img-wrap">
-              <img class="apple" src="./images/aple.png" alt="apple" />
+              <img
+                class="apple"
+                src="./images/offerings/apple.png"
+                alt="apple"
+              />
             </div>
           </div>
 
@@ -266,7 +312,7 @@
               </p>
 
               <div class="review__profile">
-                <img src="./images/Ellipse 9.png" alt="" />
+                <img src="./images/customers/ellipse-9.png" alt="" />
                 <div>
                   <h3 class="review__name">Sumith Shah</h3>
                   <p class="review__position">Some Dude</p>
@@ -281,7 +327,7 @@
               </p>
 
               <div class="review__profile">
-                <img src="./images/Ellipse 10.png" alt="" />
+                <img src="./images/customers/ellipse-10.png" alt="" />
                 <div>
                   <h3 class="review__name">Sumith Shah</h3>
                   <p class="review__position">Some Dude</p>
@@ -439,5 +485,7 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

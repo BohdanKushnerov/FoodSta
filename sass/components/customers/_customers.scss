@@ -1,19 +1,19 @@
 .customers {
   padding-top: 100px;
   padding-bottom: 200px;
-  background-image: url(/images/Rectangle\ 706-min.png);
+  background-image: url(../images/customers/rectangle-706-min.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 
   @media screen and (max-width: 767px) {
     padding: 60px 0;
-    background-image: url(/images/Rectangle\ 701-mobile.png);
+    background-image: url(../images/customers/rectangle-701-mobile.png);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 60px 0 120px;
-    background-image: url(/images/Rectangle\ 706-tablet.png);
+    background-image: url(../images/customers/rectangle-706-tablet.png);
   }
 }
 
@@ -77,7 +77,7 @@
     width: 501px;
   }
 
-  background-image: url(../images/Rectangle\ 703-min.png);
+  background-image: url(../images/customers/rectangle-703-min.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -89,7 +89,7 @@
     content: "";
     width: 101px;
     height: 16px;
-    background-image: url(../../../images/Stars.png);
+    background-image: url(../images/customers/stars.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

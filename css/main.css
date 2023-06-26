@@ -42,11 +42,13 @@ a {
   line-height: 150%;
   text-align: center;
   color: #2c2c2c;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #bbf330;
   border: transparent;
   border-radius: 30px;
 }
-.button:hover {
+.button:hover, .button:focus {
+  background-color: #ffe450;
   cursor: pointer;
 }
 
@@ -117,9 +119,6 @@ a {
     align-items: center;
     height: 51px;
   }
-  .menu__item:hover, .menu__item:focus {
-    background-color: #bbf330;
-  }
 }
 
 .menu__link {
@@ -128,6 +127,11 @@ a {
   font-size: 14px;
   line-height: 1.14;
   color: #2c2c2c;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__link:hover, .menu__link:focus {
+  color: #ffe450;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .menu__link {
@@ -248,34 +252,48 @@ a {
   }
 }
 
-.salat {
+.swiper {
   position: absolute;
   top: 14px;
   right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 580px;
+  margin: 0 auto;
+  height: 580px;
 }
 @media screen and (max-width: 767px) {
-  .salat {
-    display: none;
+  .swiper {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .salat {
-    width: 320px;
+  .swiper {
     top: 150px;
     right: 32px;
+    max-width: 320px;
+    height: 320px;
   }
 }
 
-.salat__wrap {
-  position: relative;
+.swiper-wrapper {
+  overflow: hidden;
 }
 
-.salat__img {
+.salat-img {
   border-radius: 50%;
   border: 26px solid #ffe550;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .salat__img {
+  .salat-img {
     border: 14px solid #ffe550;
   }
 }
@@ -297,21 +315,38 @@ a {
     height: 34px;
   }
 }
+.salat__button:hover {
+  cursor: pointer;
+}
 
-.salat__button--left {
+.swiper-button-prev {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-25%, -50%);
+  transform: translate(-25%, -15%);
 }
 
-.salat__button--right {
+.swiper-button-next {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(25%, -50%);
+  transform: translate(25%, -15%);
 }
 
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next::after {
+  content: "";
+}
+
+.salat__svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.salat__svg:hover, .salat__svg:focus {
+  fill: #7eb101;
+}
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .salat__svg {
     width: 10px;
@@ -332,21 +367,21 @@ a {
   .offerings {
     padding-top: 70px;
     padding-bottom: 60px;
-    background-image: url(/images/Rectangle%20694-mobile.png);
+    background-image: url(../images/offerings/rectangle-694-mobile.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .offerings {
     padding-top: 152px;
     padding-bottom: 100px;
-    background-image: url(/images/Rectangle%20694-tablet.png);
+    background-image: url(../images/offerings/rectangle-694-tablet.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .offerings {
     padding-top: 260px;
     padding-bottom: 100px;
-    background-image: url(/images/Rectangle%20694.png);
+    background-image: url(../images/offerings/rectangle-694.png);
   }
 }
 
@@ -362,7 +397,7 @@ a {
     content: "";
     width: 166px;
     height: 211px;
-    background-image: url(/images/aple-medium.png);
+    background-image: url(../images/offerings/apple-medium.png);
   }
   .offerings__container::before {
     position: absolute;
@@ -371,7 +406,7 @@ a {
     content: "";
     width: 108px;
     height: 136px;
-    background-image: url(/images/aple-small.png);
+    background-image: url(../images/offerings/apple-small.png);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -540,8 +575,12 @@ a {
 .offerings__button {
   min-width: 106px;
   min-height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   border: 2px solid #7eb101;
+}
+.offerings__button:hover, .offerings__button:focus {
+  background-color: #7eb101;
 }
 
 .favorites {
@@ -613,27 +652,31 @@ a {
   width: 395px;
   height: 397px;
   border-radius: 50%;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 16px solid #ffe550;
+}
+.favorites__img:hover, .favorites__img:focus {
+  border-color: #bbf330;
 }
 @media screen and (max-width: 767px) {
   .favorites__img {
     width: 280px;
     height: 280px;
-    border: 11px solid #ffe550;
+    border-width: 11px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .favorites__img {
     width: 336px;
     height: 338px;
-    border: 14px solid #ffe550;
+    border-width: 14px;
   }
 }
 
 .customers {
   padding-top: 100px;
   padding-bottom: 200px;
-  background-image: url(/images/Rectangle\ 706-min.png);
+  background-image: url(../images/customers/rectangle-706-min.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -641,13 +684,13 @@ a {
 @media screen and (max-width: 767px) {
   .customers {
     padding: 60px 0;
-    background-image: url(/images/Rectangle\ 701-mobile.png);
+    background-image: url(../images/customers/rectangle-701-mobile.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .customers {
     padding: 60px 0 120px;
-    background-image: url(/images/Rectangle\ 706-tablet.png);
+    background-image: url(../images/customers/rectangle-706-tablet.png);
   }
 }
 
@@ -701,7 +744,7 @@ a {
   position: relative;
   padding: 8px;
   border-radius: 0 30px 30px 30px;
-  background-image: url(../images/Rectangle\ 703-min.png);
+  background-image: url(../images/customers/rectangle-703-min.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -728,7 +771,7 @@ a {
   content: "";
   width: 101px;
   height: 16px;
-  background-image: url(../../../images/Stars.png);
+  background-image: url(../images/customers/stars.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

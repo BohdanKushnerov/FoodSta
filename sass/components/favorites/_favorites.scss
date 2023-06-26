@@ -66,17 +66,24 @@
   width: 395px;
   height: 397px;
   border-radius: 50%;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   border: 16px solid #ffe550;
+
+  &:hover,
+  &:focus {
+    border-color: #bbf330;
+  }
 
   @media screen and (max-width: 767px) {
     width: 280px;
     height: 280px;
-    border: 11px solid #ffe550;
+    border-width: 11px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 336px;
     height: 338px;
-    border: 14px solid #ffe550;
+    border-width: 14px;
   }
 }
