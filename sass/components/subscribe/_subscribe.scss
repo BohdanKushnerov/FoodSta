@@ -1,49 +1,123 @@
 .subscribe {
-    // padding-top: 58px;
-    padding-bottom: 100px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-    // Може так?
-    // transform: translateY(-123px);
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .subscribe {
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subscribe {
+    padding-top: 0;
+    padding-bottom: 114px;
+  }
+}
+
+.subscribe__text,
+.subscribe__title {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 656px;
+  }
 }
 
 .subscribe__container {
+  display: flex;
+
+  @media screen and (max-width: 1279px) {
+    justify-content: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    width: 280px;
+    height: 78px;
+    background-image: url(../images/subscribe/banan-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &::after {
+      top: -75px;
+      right: 32px;
+      width: 281px;
+      height: 136px;
+      background-image: url(../images/subscribe/banan-tablet.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &::after {
+      right: 0;
+      width: 608px;
+      height: 266px;
+      background-image: url(../images/subscribe/banan.png);
+    }
+  }
+}
+
+.subscribe__form {
+  @media screen and (max-width: 767px) {
+    max-width: 395px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    gap: 32px;
+  }
 }
 
 .subscribe__title {
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 120%;
-    color: #2C2C2C;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #2c2c2c;
 }
 
 .subscribe__text {
-    margin-bottom: 24px;
-    max-width: 656px;
-
-    font-size: 16px;
-    line-height: 150%;
-    color: #2C2C2C;
+  margin-bottom: 40px;
+  max-width: 656px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2c2c2c;
 }
 
 .subscribe__input {
-    margin-right: 32px;
-    padding: 12px 12px;
-    min-width: 394px;
+  margin-bottom: 20px;
+  padding: 12px 12px;
+  width: 100%;
+  height: 42px;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
 
-    border: 0.854167px solid #FFE550;
-    border-radius: 30px;
+  @media screen and (min-width: 768px) {
+    max-width: 395px;
+  }
 }
 
 .subscribe__input::placeholder {
-    font-size: 12px;
-    line-height: 150%;
-    color: #505050;
+  font-size: 12px;
+  line-height: 150%;
+  color: #505050;
 }
 
 .subscribe__button {
-    padding: 11px 22px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
+  height: 42px;
+  padding: 11px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

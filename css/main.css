@@ -812,12 +812,78 @@ a {
 }
 
 .subscribe {
-  padding-bottom: 100px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .subscribe {
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .subscribe {
+    padding-top: 0;
+    padding-bottom: 114px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .subscribe__text,
+  .subscribe__title {
+    max-width: 656px;
+  }
 }
 
 .subscribe__container {
   display: flex;
-  align-items: center;
+}
+@media screen and (max-width: 1279px) {
+  .subscribe__container {
+    justify-content: center;
+  }
+}
+.subscribe__container::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  width: 280px;
+  height: 78px;
+  background-image: url(../images/subscribe/banan-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .subscribe__container::after {
+    top: -75px;
+    right: 32px;
+    width: 281px;
+    height: 136px;
+    background-image: url(../images/subscribe/banan-tablet.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .subscribe__container::after {
+    right: 0;
+    width: 608px;
+    height: 266px;
+    background-image: url(../images/subscribe/banan.png);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__form {
+    max-width: 395px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    display: flex;
+    gap: 32px;
+  }
 }
 
 .subscribe__title {
@@ -825,23 +891,29 @@ a {
   font-weight: 700;
   font-size: 42px;
   line-height: 120%;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .subscribe__text {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   max-width: 656px;
   font-size: 16px;
   line-height: 150%;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .subscribe__input {
-  margin-right: 32px;
+  margin-bottom: 20px;
   padding: 12px 12px;
-  min-width: 394px;
-  border: 0.854167px solid #FFE550;
+  width: 100%;
+  height: 42px;
+  border: 0.854167px solid #ffe550;
   border-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    max-width: 395px;
+  }
 }
 
 .subscribe__input::-moz-placeholder {
@@ -857,7 +929,16 @@ a {
 }
 
 .subscribe__button {
+  height: 42px;
   padding: 11px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .subscribe__button {
+    margin-left: auto;
+  }
 }
 
 .footer {
