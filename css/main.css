@@ -304,7 +304,7 @@ ul {
   }
 }
 
-.salat__button {
+.swiper-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,12 +316,12 @@ ul {
   border: transparent;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .salat__button {
+  .swiper-button {
     width: 28px;
     height: 34px;
   }
 }
-.salat__button:hover {
+.swiper-button:hover {
   cursor: pointer;
 }
 
@@ -347,20 +347,20 @@ ul {
   content: "";
 }
 
-.salat__svg {
+.swiper-button__svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.salat__svg:hover, .salat__svg:focus {
+.swiper-button__svg:hover, .swiper-button__svg:focus {
   fill: #7eb101;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .salat__svg {
+  .swiper-button__svg {
     width: 10px;
     height: 20px;
   }
 }
 
-.salat__svg--rotate {
+.swiper-button__svg--rotate {
   transform: rotate(180deg);
 }
 
@@ -404,7 +404,17 @@ ul {
     width: 166px;
     height: 211px;
     background-image: url(../images/offerings/apple-medium.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
+  .offerings__container::after {
+    background-image: url(../images/offerings/apple-medium@2x.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .offerings__container::before {
     position: absolute;
     top: 138px;
@@ -413,6 +423,14 @@ ul {
     width: 108px;
     height: 136px;
     background-image: url(../images/offerings/apple-small.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
+  .offerings__container::before {
+    background-image: url(../images/offerings/apple-small@2x.png);
   }
 }
 @media screen and (min-width: 1280px) {

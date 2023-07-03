@@ -28,30 +28,44 @@
 .offerings__container {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     position: relative;
-
     max-width: 704px;
 
     &::after {
       position: absolute;
       top: 68px;
       right: 140px;
-
       content: "";
       width: 166px;
       height: 211px;
-
       background-image: url(../images/offerings/apple-medium.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
     }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      &::after {
+        background-image: url(../images/offerings/apple-medium@2x.png);
+      }
+    }
+
     &::before {
       position: absolute;
       top: 138px;
       right: -5px;
-
       content: "";
       width: 108px;
       height: 136px;
-
       background-image: url(../images/offerings/apple-small.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      &::before {
+        background-image: url(../images/offerings/apple-small@2x.png);
+      }
     }
   }
 

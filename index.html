@@ -28,18 +28,18 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="">
-          <img class="logo__img" src="./images/Vector.png" alt="Logo" />
+          <img class="logo__img" src="./images/Vector.png" alt="logo" />
         </a>
 
         <button class="menu-button-open" type="button" data-menu-open>
-          <svg class="salat__svg" width="40" height="40">
+          <svg width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
 
         <nav class="nav hidden" data-menu>
           <button class="menu-button-close" type="button" data-menu-close>
-            <svg class="salat__svg" width="24" height="24">
+            <svg width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
@@ -81,32 +81,36 @@
                 <img
                   class="salat-img"
                   src="./images/slider/salat-1.png"
-                  alt=""
+                  alt="salat-1"
                 />
               </li>
               <li class="swiper-slide">
                 <img
                   class="salat-img"
                   src="./images/slider/salat-2.png"
-                  alt=""
+                  alt="salat-2"
                 />
               </li>
               <li class="swiper-slide">
                 <img
                   class="salat-img"
                   src="./images/slider/salat-3.png"
-                  alt=""
+                  alt="salat-3"
                 />
               </li>
             </ul>
 
-            <div class="salat__button swiper-button-prev">
-              <svg class="salat__svg" width="16" height="29">
+            <div class="swiper-button swiper-button-prev">
+              <svg class="swiper-button__svg" width="16" height="29">
                 <use href="./images/symbol-defs.svg#icon-arrow"></use>
               </svg>
             </div>
-            <div class="salat__button swiper-button-next">
-              <svg class="salat__svg salat__svg--rotate" width="16" height="29">
+            <div class="swiper-button swiper-button-next">
+              <svg
+                class="swiper-button__svg swiper-button__svg--rotate"
+                width="16"
+                height="29"
+              >
                 <use href="./images/symbol-defs.svg#icon-arrow"></use>
               </svg>
             </div>
@@ -118,11 +122,19 @@
         <div class="container offerings__container">
           <div class="border-wrap">
             <div class="img-wrap">
-              <img
-                class="apple"
-                src="./images/offerings/apple.png"
-                alt="apple"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/offerings/apple.png    1x,
+                    ./images/offerings/apple@2x.png 2x
+                  "
+                />
+                <img
+                  class="apple"
+                  src="./images/offerings/apple.png"
+                  alt="apple"
+                />
+              </picture>
             </div>
           </div>
 
@@ -184,14 +196,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/favorites/gamburger-min.png    1x,
-                    ./images/favorites/gamburger@2x-min.png 2x
+                    ./images/favorites/gamburger.png    1x,
+                    ./images/favorites/gamburger@2x.png 2x
                   "
                 />
                 <img
                   class="favorites__img"
-                  src="./images/favorites/gamburger-min.png"
-                  alt=""
+                  src="./images/favorites/gamburger.png"
+                  alt="gamburger"
                 />
               </picture>
             </li>
@@ -199,14 +211,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/favorites/Pasta-min.png    1x,
-                    ./images/favorites/Pasta@2x-min.png 2x
+                    ./images/favorites/pasta.png    1x,
+                    ./images/favorites/pasta@2x.png 2x
                   "
                 />
                 <img
                   class="favorites__img"
-                  src="./images/favorites/Pasta-min.png"
-                  alt=""
+                  src="./images/favorites/pasta.png"
+                  alt="pasta"
                 />
               </picture>
             </li>
@@ -214,14 +226,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/favorites/pizza-min.png    1x,
-                    ./images/favorites/pizza@2x-min.png 2x
+                    ./images/favorites/pizza.png    1x,
+                    ./images/favorites/pizza@2x.png 2x
                   "
                 />
                 <img
                   class="favorites__img"
-                  src="./images/favorites/pizza-min.png"
-                  alt=""
+                  src="./images/favorites/pizza.png"
+                  alt="pizza"
                 />
               </picture>
             </li>
@@ -229,14 +241,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/favorites/chicken-min.png    1x,
-                    ./images/favorites/chicken@2x-min.png 2x
+                    ./images/favorites/chicken.png    1x,
+                    ./images/favorites/chicken@2x.png 2x
                   "
                 />
                 <img
                   class="favorites__img"
-                  src="./images/favorites/chicken-min.png"
-                  alt=""
+                  src="./images/favorites/chicken.png"
+                  alt="chicken"
                 />
               </picture>
             </li>
@@ -244,14 +256,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/favorites/salat-min.png    1x,
-                    ./images/favorites/salat@2x-min.png 2x
+                    ./images/favorites/salat.png    1x,
+                    ./images/favorites/salat@2x.png 2x
                   "
                 />
                 <img
                   class="favorites__img"
-                  src="./images/favorites/salat-min.png"
-                  alt=""
+                  src="./images/favorites/salat.png"
+                  alt="salat"
                 />
               </picture>
             </li>
@@ -259,14 +271,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/favorites/borshch-min.png    1x,
-                    ./images/favorites/borshch@2x-min.png 2x
+                    ./images/favorites/borshch.png    1x,
+                    ./images/favorites/borshch@2x.png 2x
                   "
                 />
                 <img
                   class="favorites__img"
-                  src="./images/favorites/borshch-min.png"
-                  alt=""
+                  src="./images/favorites/borshch.png"
+                  alt="borshch"
                 />
               </picture>
             </li>

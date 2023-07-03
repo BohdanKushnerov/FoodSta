@@ -44,7 +44,7 @@
   }
 }
 
-.salat__button {
+.swiper-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@
   content: "";
 }
 
-.salat__svg {
+.swiper-button__svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -102,6 +102,6 @@
   }
 }
 
-.salat__svg--rotate {
+.swiper-button__svg--rotate {
   transform: rotate(180deg);
 }
